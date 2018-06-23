@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<a href="index.html">Index</a>
+		<h2>Paramètres</h2>
+		<form action="/settings.html" method="get">
+			<label for="name">Nom: </label>
+			<input id="name" type="text" required><br>
+			<label for="home_adress">Adresse domicile: </label>
+			<input id="home_adress" type="text" required><br>
+			<label for="work_adress">Adresse lieu de travail: </label>
+			<input id="work_adress" type="text" required><br>
+			<label for="lang">Langue : </label>
+			<select id="lang" required>
+				<option value="fr">Français</option>
+			</select><br>
+			<label for="preparation">Temps préparation (en minutes): </label>
+			<input id="preparation" type="number" required><br>
+			<label for="api_maps_key">Clé API Google Maps: </label>
+			<input id="api_maps_key" type="text" required><br>
+			<label for="api_weather_key">Clé API OpenWeatherMap: </label>
+			<input id="api_weather_key" type="text" required><br>
+			<label for="api_news_key">Clé API NewsAPI: </label>
+			<input id="api_news_key" type="text" required><br>
+			<label for="transportation">Mode de transport: </label>
+			<select id="transportation" required>
+				<option value="driving">Voiture</option>
+				<option value="bus">Bus</option>
+			</select><br>
+			<input type="submit" value="Valider" required>
+		</form>
+	</body>
+</html>
