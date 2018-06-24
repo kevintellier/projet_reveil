@@ -5,9 +5,14 @@
 	<body>
 		<h1>Smart Alarm</h1>
 		<a href="settings.html">Paramètres</a>
-		<form action="/" method="get">
-			<input id="time" type="time" required>
+		<p id="wake_up_time">{{ wake_up_time }}</p>
+		<p id="clock"></p>
+		<form action="/" method="post">
+			<input name="time" type="time" required><br>
 			<input type="submit" value="Valider" required>
 		</form>
+		<form name="\myform\" action="/wakeup" method="post">
+		</form>
+	<script src="{{ url_for('static',filename='js/clock1.js') }}"></script>
 	</body>
 </html>
